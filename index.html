@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- nav -->
+    <div id="nav" class="nav">
+      <img class="nav__logo" src="images/netflix-logo.png" alt="" />
+      <img class="nav__avatar" src="images/netflix-avatar.png" alt="" />
+    </div>
+
+    <!-- header -->
+    <header class="banner">
+      <div class="banner__contents">
+        <h1 class="banner__title">Money Heist</h1>
+        <div class="banner__buttons">
+          <button class="banner__button">Play</button>
+          <button class="banner__button">My List</button>
+        </div>
+        <h1 class="banner__description">
+          A criminal mastermind who goes by "The Professor" has a plan to pull off the biggest heist in recorded history -- to print billions of euros in the Royal Mint of Spain. 
+          To help him carry out the ambitious plan, he recruits eight people with certain abilities and who have nothing to lose. 
+          The group of thieves take hostages to aid in their negotiations with the authorities, who strategize to come up with a way to capture The Professor. 
+          As more time elapses, the robbers prepare for a showdown with the police.
+        </h1>
+      </div>
+      <div class="banner--fadeBottom"></div>
+      
+    </header>
+
+    <!-- Continue watching -->
+    <div class="row">
+      <h2>Continue watching for Cutie Pie</h2>
+      <div class="row__posters">
+        <img class="row__poster row__posterLarge" src="./images/pscho pass.jpg" alt="psycho pass" />
+
+        <img class="row__poster row__posterLarge" src="./images/thunivu.jpg" alt="Thunivu" />
+
+        <img class="row__poster row__posterLarge" src="./images/The blacklist.jpg" alt="The Blacklist" />
+
+        <img class="row__poster row__posterLarge" src="./images/one punchman.jpg" alt="One-punch man" />
+      </div>
+    </div>
+
+    
+    <!-- Trending Now -->
+    <div class="row">
+      <h2>Trending Now</h2>
+      <div class="row__posters">
+        <img class="row__poster row__posterLarge" src="./images/blue lock.jpg" alt="Blue Lock" />
+
+        <img class="row__poster row__posterLarge" src="./images/Raangi.jpg" alt="Raangi" />
+
+        <img class="row__poster row__posterLarge" src="./images/Stranger Things.jpg" alt="Stranger Things" />
+
+        <img class="row__poster row__posterLarge" src="./images/Alice in boderland.jpg" alt="Alice in Boderland" />
+
+        <img class="row__poster row__posterLarge" src="./images/Lucifer.jpg" alt="Lucifer" />
+
+        <img class="row__poster row__posterLarge" src="./images/Squid game.jpg" alt="Squid Game" />
+
+        <img class="row__poster row__posterLarge" src="./images/Naruto.jpg" alt="Naruto" />
+
+        <img class="row__poster row__posterLarge" src="./images/Outer Banks.jpg" alt="Outer Banks" />
+      </div>
+    </div>
+
+    
+
+    <!-- Super natural -->
+    <div class="row">
+      <h2>Super Natural Soaps</h2>
+      <div class="row__posters">
+        <img class="row__poster" src="./images/all of us are dead.jpg" alt="All of us are dead" />
+
+        <img class="row__poster" src="./images/walking dead.jpg" alt="Walking dead" />
+
+        <img class="row__poster" src="images/dark.jpg" alt="Dark" />
+
+        <img class="row__poster" src="./images/hellbound.jpg" alt="Hellbound" />
+    </div>
+
+    <!-- Action Movies -->
+    <div class="row">
+      <h2>Action Movies</h2>
+      <div class="row__posters">
+        <img class="row__poster" src="./images/umberlla academy.jpg" alt="Umberlla Academy" />
+
+        <img class="row__poster" src="./images/The nun.jpeg" alt="The Nun" />
+
+        <img class="row__poster" src="./images/Lock and Key.jpg" alt="Lock and Key" />
+
+        <img class="row__poster" src="./images/Hunting of a hill house.jpg" alt="The Hunting of a Hill House" />
+      </div>
+    </div>
+
+    <script>
+      const nav = document.getElementById('nav');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY >= 100) {
+          nav.classList.add('nav__black');
+        } else {
+          nav.classList.remove('nav__black');
+        }
+      });
+    </script>
+  </body>
+</html>
